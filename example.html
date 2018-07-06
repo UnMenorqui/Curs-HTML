@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang=”es-ES”>
+<meta charset=”UTF-8”>
+
+
+<html>
+
+  <head>
+    <title> Examples </title>
+<link rel="stylesheet" href="main.css">
+  </head>
+
+  <nav>
+    <a href="index.html">Index</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="example.html">Examples</a> |
+    <a href="tags.html">Tags</a> |
+    <a href="table.html">Table</a> |
+    <a href="grid.html">Grid</a> |
+    <a href="bender.html">Bender</a> |
+    <a href="curriculum.html">Curriculum</a> |
+    <a href="galeria.html">Galeria</a> |
+    <a href="methods.html">Finding Methods</a> |
+    <a href="methods2.html"> Interval Letters</a> |
+    <a href="clock.html"> Clock</a>
+
+  </nav>
+
+
+  <body>
+    <div id=headers align="center">
+      <h1> Header 1 </h1>
+      <h2> Header 2 </h2>
+      <h3> Header 3 </h3>
+      <h4> Header 4 </h4>
+      <h5> Header 5 </h5>
+      <h6> Header 6 </h6>
+      <hr>
+      <p> This is a paragraph </p>
+      <span> Below thre is the PDF of the course </span>
+      <hr>
+    </div>
+
+    <div id="link-g" align="center">
+    <h4> This is a blank link to Google, _blank opens a new tab"
+    <br>
+    <a href="https://www.google.com" target="_blank"> Google </a>
+
+
+    <div id="user-form" align="center">
+      <h3> Form 1 - Simple form</h3>
+      <form action="/formulari.js">
+      <label for="username">username: </label>
+      <input type="text" name="firstname" value="Name" id="name"> <br>
+      <label for="password">Password: </label>
+      <input type="text" name="firstname" value="Name" id="name"> <br>
+      <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+<hr>
+
+    <div id="form2" align="center">
+      <h3> Form 2 - Fieldset & Legend</h3>
+      <form action="/action_page.php">
+    Password: <input type="password" name="pass" placeholder="your password here"><br>
+    <fieldset>
+      <legend>Dog:</legend>
+      Email: <input type="email" name="email" placeholder="example@email.com" ><br> Number: <input type="number" name="number" value="1" max="5"><br>
+      Size: <input type="range" name="range" value="4" step="2"><br>
+      Url: <input type="url" name="url" placeholder="http://www.google.com"><br>
+    </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <hr>
+
+
+    <div id="form3" align="center">
+      <h3> Form 3 - Select & optgroup </h3>
+
+      <form action="/action_page.php">
+            Best color:
+              <select name="colors">
+                    <optgroup label="Cold">
+                             <option value="blue">Blue</option>
+                             <option value="green">Green</option>
+                    </optgroup>
+                             <optgroup label="Warm">
+                             <option value="red">Red</option>
+                             <option value="yellow" selected>Yellow</option>
+                    </optgroup>
+              </select>
+  <br><br>
+  <input type="submit" value="Submit">
+  <br><br>
+</form>
+
+    </div>
+
+<hr>
+
+  <div id="form4" align="center">
+    <!-- This is a comment -->
+    <h3> Form 4 - Datalist
+    <form action="/action_page.php">
+          Best color:
+          <input list="colors" name="color">
+          <datalist id="colors">
+              <option value="Blue"></option>
+              <option value="Red"></option>
+              <option value="Yellow"></option>
+              <option value="Green"></option>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+    </form>
+  </div>
+
+<hr>
+    <div id="form5" align="center">
+      <h3> Form 5 - Radio button & Check Box </h3>
+      <br>
+      <form action="/action_page.php">
+          <label for="male">Male: </label>
+          <input type="radio" name="gender" value="male" id="male" checked><br>
+          <label for="female">Female: </label>
+          <input type="radio" name="gender" value="female" id=”female”><br>
+          <label for="other">Other: </label>
+          <input type="radio" name="gender" value="other" id=”other”><br>
+          <input type="checkbox" name="gender2" value="NB"> Non-binary <br>
+          <input type="checkbox" name="gender3" value="AH"> Apache Helicopter <br>
+          <input type="submit" value="Submit">
+     </form>
+
+    </div>
+
+    <hr>
+
+    <div id="form6" align="center">
+      <h3> Form 6 - Textarea </h3>
+
+      <form action="/action_page.php">
+          Essay:
+          <br>
+          <textarea name="message" rows="10" cols="30">
+            You need to be careful with textareas because, for example, this line is one line break
+            from the start, so sometimes you are adding spaces or breaks without knowledge of it.
+          </textarea>
+          <br><br>
+    <input type="submit" value="Submit">
+     </form>
+    </div>
+
+<hr>
+
+    <div id="container-format" align="center">
+      <h3> Below there is an example of how containers work </h3>
+      <img src="images/containers.jpg">
+    </div>
+
+<br>
+<hr>
+<br>
+
+<div id="table-example" align="center">
+  <h3> Below there is an example of how table works</h3>
+  <table> <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+  </tr> <tr>
+      <td>Content 1.1</td>
+      <td>Content 2.1</td>
+      <td>Content 3.1</td>
+    </tr><tr>
+      <td>Content 1.2</td>
+      <td>Content 2.2</td>
+      <td>Content 3.2</td>
+    </tr>
+  </table>
+</div>
+
+<br><hr><br>
+ <div id="canvas-test" align="center">
+   <h3> Canvas Example </h3>
+   <p> Controlled via 'script' tag, as we don't use JS file yet.</p>
+   <canvas id="myCanvas" width="200" height="100"></canvas>
+       <script>
+       var canvas = document.getElementById("myCanvas");
+       var ctx = canvas.getContext("2d");
+       ctx.fillStyle = "#B2B2B2";
+       ctx.fillRect(0,0,150,75);
+       </script>
+ </div>
+
+<br><hr><br>
+
+<div id="video">
+  <h3> Video Example </h3>
+
+  <video width="320" height="240" controls>
+  <source src="files/JunsKitchen.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+</video>
+</div>
+
+<br><hr><br>
+
+<div id="audio">
+  <h3> Audio Example </h3>
+  <audio controls>
+    <source src="files/ShapeofYou.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<br><hr><br>
+
+<div id="iframe">
+  <h3> Inlane Frame Example </h3>
+  <iframe src='https://raco.fib.upc.edu/' class='ExFrame' id='ifr' style='width:100%;height:500px;' scrolling='yes'></iframe>
+
+</div>
+
+<br><hr><br>
+
+<div id="google-api">
+  <h3> API Example </h3>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(39.871179,4.209172),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA785srAhYwe58UcJYDePS9xxUtwJn5evE&callback=myMap"></script>
+
+</div>
+
+<br><hr><br>
+
+<div id="pdf-file" align="center">
+      <h3> Embed example </h3>
+      <embed src="files/HTML_Jedi.pdf" width="800px" height="2100px" align="middle"/>
+</div>
+
+<hr>
+
+  </body>
+
+</html>
