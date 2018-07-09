@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="main.css">
+	<style>
+	#clock-time {
+		margin-top: 200px;
+		font-size: 200px;
+	}
+	</style>
+</head>
+
+<nav>
+  <a href="index.html">Index</a> |
+  <a href="contact.html">Contact</a> |
+  <a href="example.html">Examples</a> |
+  <a href="tags.html">Tags</a> |
+  <a href="table.html">Table</a> |
+  <a href="grid.html">Grid</a> |
+  <a href="bender.html">Bender</a> |
+  <a href="curriculum.html">Curriculum</a> |
+  <a href="galeria.html">Galeria</a> |
+  <a href="methods.html">Finding Methods</a> |
+  <a href="methods2.html"> Interval Letters</a> |
+  <a href="clock.html"> Clock</a> |
+  <a href="carrousel.html"> Carrousel</a>
+
+</nav>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <style>
+
+
+  </style>
+</head>
+<body>
+
+<div class="container mt-3">
+
+<h2>Carousel</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/red.png" alt="Red" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/blue.png" alt="Blue" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/green.png" alt="Green" width="1100" height="500">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+
+<script>
+
+// Activate Carousel
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".carousel-control-prev").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+
+</script>
+
+</body>
+</html>
+</html>
