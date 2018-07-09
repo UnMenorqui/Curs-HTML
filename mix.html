@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mix</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<style>
+	.carousel-inner img {
+	    width: 20%;
+	    height: 20%;
+		z-index: 1;
+	}
+
+	#clock-time {
+		z-index: 10;
+		position: absolute;
+		font-size: 50px;
+		margin-left: 70%;
+		margin-top: 2%;
+	}
+
+	.areadetext {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b2b2b2;
+    color: black;
+    text-align: center;
+}
+	</style>
+</head>
+<body>
+
+<header>
+<div class="container mt-3">
+<p id="clock-time">
+</p>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" width="400px" height="200px" style="float: center">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/red.png" alt="Red" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/blue.png" alt="Blue" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/green.png" alt="Green" width="1100" height="500">
+    </div>
+  </div>
+</div>
+
+</div>
+</header>
+
+<hr>
+
+<nav>
+  <a href="index.html">Index</a> |
+  <a href="contact.html">Contact</a> |
+  <a href="example.html">Examples</a> |
+  <a href="tags.html">Tags</a> |
+  <a href="table.html">Table</a> |
+  <a href="grid.html">Grid</a> |
+  <a href="bender.html">Bender</a> |
+  <a href="curriculum.html">Curriculum</a> |
+  <a href="galeria.html">Galeria</a> |
+  <a href="methods.html">Finding Methods</a> |
+  <a href="methods2.html"> Interval Letters</a> |
+  <a href="clock.html"> Clock</a> |
+  <a href="carrousel.html"> Carrousel</a> |
+  <a href="mix.html"> Mix</a>
+
+</nav>
+
+<hr>
+
+<div class="areadetext">
+<main style="float: left;">
+
+	​<textarea id="myvalue" type="textarea" style="float: left; margin-left: 20px;" name="message" oninput="DoSubmit()" rows="10" cols="60"></textarea>
+
+	<aside style="float: right; margin-left: 20px;">
+		<textarea id="hola1" rows="10" cols="60" readonly ></textarea>
+	</aside>
+</main>
+
+</div>
+
+<footer>
+	<div class="footer">
+		<p>Best Footer EVER</p>
+	</div>
+</footer>
+
+<script>
+
+function DoSubmit(){
+	var person2 = document.getElementById("myvalue").value;
+	document.getElementById("hola1").innerHTML = person2;
+
+	return true;
+}
+
+</script>
+
+<script>
+var timer = setInterval(clock, 1000);
+var msec = 00;
+var sec = 00;
+var min = 00;
+
+function n(n){ // En el cas de que el número sigui d'un digit o com esta a l'expresio regular
+			   // retorna el numero si es major que o hi afegeit un 0 al davant.
+	return n > 9 ? "" + n: "0" + n;
+}
+
+function clock() {
+	msec += 1;
+	if (msec == 60) {
+		sec += 1;
+		msec = 00;
+		if (sec == 60) {
+			sec = 00;
+			min += 1;
+		}
+	}
+	document.getElementById("clock-time").innerHTML = n(min) + ":" + n(sec) + ":" + n(msec);
+}
+
+</script>
+
+<script>
+
+// Activate Carousel
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".carousel-control-prev").click(function(){
+    $("#myCarousel").carousel("prev");
+});
+
+</script>
+
+</body>
+</html>
+</html>
