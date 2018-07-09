@@ -17,6 +17,11 @@ a {
     color: #112263;
 }
 
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
 #container{
 	width: 100%;
 	margin: 0 auto;
